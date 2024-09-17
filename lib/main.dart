@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jawab/screens/startup_screens.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
