@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:jawab_io/Widgets/Dots.dart';
 
 void main() {
   runApp(const MainApp());
 }
 
+void onPressd() 
+{}
 class MainApp extends StatelessWidget {
   const MainApp({super.key});
 
@@ -12,7 +15,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       home: Scaffold(
         body: Center(
-          child: Text('Hello World!'),
+          child: Dots(5),
         ),
       ),
     );
