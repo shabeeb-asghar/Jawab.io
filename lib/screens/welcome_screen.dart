@@ -133,7 +133,7 @@ class WelcomeScreen extends StatelessWidget {
 
                     // Facebook Button
                     SocialButton(
-                      iconPath: 'Assets/Images/facebook.png',
+                      iconPath: 'Assets/Images/fb.png',
                     ),
                   ],
                 ),
