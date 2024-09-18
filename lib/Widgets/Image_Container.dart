@@ -33,7 +33,7 @@ class Image_Container extends StatelessWidget{
           SizedBox(height: Y_Index_Shadow),
            Row(
              children: [
-              const SizedBox(width: 108,),
+              SizedBox(width: X_Index_Shadow,),
                CustomPaint(
                 size: const Size(121, 11), // Adjust the size as per your image
                 painter: EllipsePainter(),),
