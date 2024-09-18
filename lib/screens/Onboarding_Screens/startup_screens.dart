@@ -22,7 +22,7 @@ class StartupScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/logo.png',
+                'Assets/Images/logo.png',
                 height: 150,
                 width: 150,
               ),

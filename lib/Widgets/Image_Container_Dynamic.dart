@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Image_Container extends StatelessWidget {
+class Image_Container_Dynamic extends StatelessWidget {
   final String Image_Path;
   final double Image_Height;
   final double Image_Width;
@@ -8,7 +8,10 @@ class Image_Container extends StatelessWidget {
   final double Y_Index_Image;
   final double Y_Index_Shadow;
   final double X_Index_Shadow;
-  const Image_Container(
+  final double Container_Height;
+  final double Container_Width;
+
+  const Image_Container_Dynamic(
       {required this.Image_Path,
       this.Image_Width = 200,
       this.Image_Height = 230,
@@ -16,12 +19,15 @@ class Image_Container extends StatelessWidget {
       this.Y_Index_Image = 20,
       this.X_Index_Shadow = 108,
       this.Y_Index_Shadow = 20,
+      this.Container_Height = 329, // Made dynamic
+      this.Container_Width = 329, // Made dynamic
       super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 329,
-      width: 329,
+      height: Container_Height, // Use dynamic container height
+      width: Container_Width, // Use dynamic container width
       decoration: const BoxDecoration(
         boxShadow: [
           BoxShadow(
