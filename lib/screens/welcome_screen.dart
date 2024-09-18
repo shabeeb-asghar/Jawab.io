@@ -13,39 +13,33 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const SizedBox(height: 150,),
             // Logo Section
-            Column(
-              children: [
-                Image_Container(
-                  Image_Path: "Assets/Images/logo.png",
-                  X_Index_Image: 65,
-                  Y_Index_Image: 55,
-                  Image_Height: 120,
-                  Image_Width: 120,
-                ),
-                const SizedBox(height: 20),
-                const Text(
-                  'Jawab.io',
-                  style: TextStyle(
-                    fontFamily: 'Roboto',
-                    fontSize: 30,
-                    color: Color(0xFFF7941D),
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
+            Image.asset("Assets/Images/Welcome.png", height: 105, width: 103,),
+            const SizedBox(height: 10),
+            const Text(
+              'Jawab.io',
+              style: TextStyle(
+                fontFamily: 'Poppins',
+                fontSize: 28,
+                color: Color.fromARGB(255,237, 128, 27),
+                fontWeight: FontWeight.bold,
+              ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 40),
 
             // Welcome Text
-            const Text(
-              'Welcome on Jawab',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontFamily: 'Roboto',
-                fontSize: 30,
-                fontWeight: FontWeight.w600,
-                color: Colors.black,
+            const SizedBox(
+              width: 170,
+              child: Text(
+                'Welcome on Jawab',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontFamily: 'Poppins',
+                  fontSize: 28,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.black,
+                ),
               ),
             ),
             const SizedBox(height: 40),
@@ -70,7 +64,7 @@ class WelcomeScreen extends StatelessWidget {
                     child: const Text(
                       'Sign In',
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'Poppins',
                         fontSize: 18,
                         color: Colors.white,
                         fontWeight: FontWeight.w600,
@@ -97,7 +91,7 @@ class WelcomeScreen extends StatelessWidget {
                     child: const Text(
                       'Sign Up',
                       style: TextStyle(
-                        fontFamily: 'Roboto',
+                        fontFamily: 'Poppins',
                         fontSize: 18,
                         color: Color(0xFF2E0548),
                         fontWeight: FontWeight.w600,
@@ -114,7 +108,7 @@ class WelcomeScreen extends StatelessWidget {
                 Text(
                   'Or continue with',
                   style: TextStyle(
-                    fontFamily: 'Roboto',
+                    fontFamily: 'Poppins',
                     fontSize: 14,
                     color: Colors.grey,
                   ),

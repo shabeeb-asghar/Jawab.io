@@ -10,11 +10,10 @@ class StartupScreen extends StatelessWidget {
       body: Container(
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
+            begin: Alignment.topLeft,
             colors: [
-              Color(0xFF42275A),
-              Color(0xFF734B6D),
+              Color.fromARGB(255,91, 58, 85),
+              Color.fromARGB(255,34, 22, 72),
             ],
           ),
         ),
@@ -31,7 +30,7 @@ class StartupScreen extends StatelessWidget {
               const Text(
                 'Jawab.io',
                 style: TextStyle(
-                  fontFamily: 'Roboto',
+                  fontFamily: "Poppins",
                   fontSize: 50,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,

@@ -7,8 +7,8 @@ void Press_Skip_Button() {}
 
 void Press_Next_Button() {}
 
-class OnBoarding_7 extends StatelessWidget {
-  const OnBoarding_7({super.key});
+class OnBoarding_8 extends StatelessWidget {
+  const OnBoarding_8({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -30,11 +30,12 @@ class OnBoarding_6 extends StatelessWidget {
           ),
           Image_Container(
             Image_Path: "Assets/Images/6.png",
-            Y_Index_Shadow: 25,
-            X_Index_Image: 78,
-            Y_Index_Image: 65,
-            Image_Height: 180,
-            Image_Width: 180,
+            Y_Index_Shadow: 15,
+            X_Index_Image: 27,
+            Y_Index_Image: 50,
+            Image_Height: 230,
+            Image_Width: 230,
+            X_Index_Shadow: 106,
           ),
           SizedBox(
             height: 30,
