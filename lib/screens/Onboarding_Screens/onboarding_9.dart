@@ -50,13 +50,14 @@ class OnBoarding_9 extends StatelessWidget{
           SizedBox(height: 20),
           Padding(
             padding: EdgeInsets.only(left: 125),
-            child: Dots(7),
+            child: Dots(8),
           )
         ],),
         Positioned(
           top: 250,
           left: 155,
-          child: Image.asset("Assets/Images/7_2.png"),height: 280,width: 280,),
+          height: 280,width: 280,
+          child: Image.asset("Assets/Images/7_2.png")),
         ]
       )
       ),

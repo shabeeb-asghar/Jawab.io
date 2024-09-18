@@ -6,7 +6,7 @@ class Dots extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: List.generate(9, (index) {
+      children: List.generate(10, (index) {
         if(index == Active)
         {
           return const Padding(

@@ -42,7 +42,7 @@ class OnBoarding_10 extends StatelessWidget{
         SizedBox(height: 20),
         Padding(
           padding: EdgeInsets.only(left: 125),
-          child: Dots(8),
+          child: Dots(9),
         )
       ],)
       ),
