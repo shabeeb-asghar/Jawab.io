@@ -21,7 +21,12 @@ class OnBoarding_1 extends StatelessWidget{
       body: SafeArea(child: 
       Column(crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-        Padding(padding: EdgeInsets.only(left: 300), child: Button("Skip",16,Colors.white,FontWeight.w300,Color.fromARGB(255,36,22,73),20,80,Press_Skip_Button)),
+        Row(
+          children: [
+            SizedBox(width: 290,),
+            Button("Skip",16,Colors.white,FontWeight.w300,Color.fromARGB(255,36,22,73),20,80,Press_Skip_Button),
+          ],
+        ),
         SizedBox(height: 20,),
         Image_Container(Image_Path: "Assets/Images/1.png"),
         SizedBox(height: 30,),

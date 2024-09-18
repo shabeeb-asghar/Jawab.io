@@ -7,7 +7,8 @@ class Image_Container extends StatelessWidget{
   final double X_Index_Image;
   final double Y_Index_Image;
   final double Y_Index_Shadow;
-  const Image_Container({required this.Image_Path,this.Image_Width = 200,this.Image_Height = 230,this.X_Index_Image=50,this.Y_Index_Image = 20,this.Y_Index_Shadow = 20,super.key});
+  final double X_Index_Shadow;
+  const Image_Container({required this.Image_Path,this.Image_Width = 200,this.Image_Height = 230,this.X_Index_Image=50,this.Y_Index_Image = 20,this.X_Index_Shadow = 108,this.Y_Index_Shadow = 20,super.key});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -30,9 +31,14 @@ class Image_Container extends StatelessWidget{
             ],
           ),
           SizedBox(height: Y_Index_Shadow),
-           CustomPaint(
-            size: const Size(121, 11), // Adjust the size as per your image
-            painter: EllipsePainter(),)
+           Row(
+             children: [
+              const SizedBox(width: 108,),
+               CustomPaint(
+                size: const Size(121, 11), // Adjust the size as per your image
+                painter: EllipsePainter(),),
+             ],
+           )
         ],
       ),
     );
