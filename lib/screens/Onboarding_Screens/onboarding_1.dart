@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jawab_io/Widgets/Button.dart';
 import 'package:jawab_io/Widgets/Dots.dart';
 import 'package:jawab_io/Widgets/Image_Container.dart';
+import 'package:jawab_io/screens/Onboarding_Screens/onboarding_2.dart';
 
 void Press_Skip_Button()
 {
@@ -10,7 +11,6 @@ void Press_Skip_Button()
 
 void Press_LetsGo_Button()
 {
-
 }
 
 class OnBoarding_1 extends StatelessWidget{

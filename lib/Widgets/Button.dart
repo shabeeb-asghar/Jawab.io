@@ -10,7 +10,7 @@ class Button extends StatelessWidget
   final double Button_Width;
   final Function onPressed;
   final FontWeight Text_Weight;
-  const Button(this.Button_Text, this.Text_Size,this.Text_Color,this.Text_Weight ,this.Button_Color, this.Button_Height, this.Button_Width, this.onPressed, {super.key});
+  const Button(this.Button_Text, this.Text_Size,this.Text_Color,this.Text_Weight ,this.Button_Color, this.Button_Height, this.Button_Width,this.onPressed,{super.key});
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(style: ElevatedButton.styleFrom(
