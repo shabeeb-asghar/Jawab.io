@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:jawab_io/screens/Onboarding_Screens/onboarding_1.dart';
 
 class StartupScreen extends StatelessWidget {
   const StartupScreen({Key? key}) : super(key: key);
@@ -27,12 +26,12 @@ class StartupScreen extends StatelessWidget {
                 height: 150,
                 width: 150,
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 20),
               const Text(
                 'Jawab.io',
                 style: TextStyle(
                   fontFamily: 'Roboto',
-                  fontSize: 50,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
                 ),
