@@ -28,8 +28,8 @@ class OnBoarding_10 extends StatelessWidget{
           ],
         ),
         SizedBox(height: 20,),
-        Image_Container(Image_Path: "Assets/Images/10.png",X_Index_Shadow: 200,Y_Index_Shadow: 5, X_Index_Image: 43,Y_Index_Image: 20, Image_Height: 270, Image_Width: 270,),
-        SizedBox(height: 30,),
+        Image_Container(Image_Path: "Assets/Images/10.png",X_Index_Shadow: 108,Y_Index_Shadow: 5, X_Index_Image: 43,Y_Index_Image: 10, Image_Height: 280, Image_Width: 280,),
+        SizedBox(height: 40,),
         SizedBox(width: 335,child: Text("And many more amazing features",textAlign: TextAlign.center,style: TextStyle(
           fontFamily: "Poppins",
           fontSize: 28,
@@ -37,12 +37,12 @@ class OnBoarding_10 extends StatelessWidget{
           color: Colors.black
           
         ),),),
-        SizedBox(height: 70,),
+        SizedBox(height: 50,),
         Button("Next", 16, Colors.white, FontWeight.w600, Color.fromARGB(255,36,22,73), 50, 335,Press_Next_Button),
         SizedBox(height: 20),
         Padding(
           padding: EdgeInsets.only(left: 125),
-          child: Dots(3),
+          child: Dots(8),
         )
       ],)
       ),
