@@ -11,30 +11,25 @@ class Image_Container_Dynamic extends StatelessWidget {
   final double Container_Height;
   final double Container_Width;
 
-  const Image_Container_Dynamic(
-      {required this.Image_Path,
-      this.Image_Width = 200,
-      this.Image_Height = 230,
-      this.X_Index_Image = 50,
-      this.Y_Index_Image = 20,
-      this.X_Index_Shadow = 108,
-      this.Y_Index_Shadow = 20,
-      this.Container_Height = 329, // Made dynamic
-      this.Container_Width = 329, // Made dynamic
-      super.key});
+  const Image_Container_Dynamic({
+    required this.Image_Path,
+    this.Image_Width = 200,
+    this.Image_Height = 230,
+    this.X_Index_Image = 50,
+    this.Y_Index_Image = 20,
+    this.X_Index_Shadow = 108,
+    this.Y_Index_Shadow = 20,
+    this.Container_Height = 329,
+    this.Container_Width = 329,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: Container_Height, // Use dynamic container height
-      width: Container_Width, // Use dynamic container width
+      height: Container_Height,
+      width: Container_Width,
       decoration: const BoxDecoration(
-        boxShadow: [
-          BoxShadow(
-              blurRadius: 3,
-              offset: Offset(0, 4),
-              color: Color.fromARGB(51, 0, 0, 0))
-        ],
         borderRadius: BorderRadius.all(Radius.circular(200)),
         gradient: LinearGradient(colors: [
           Color.fromARGB(255, 90, 57, 86),
@@ -57,42 +52,9 @@ class Image_Container_Dynamic extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: Y_Index_Shadow),
-          Row(
-            children: [
-              SizedBox(
-                width: X_Index_Shadow,
-              ),
-              CustomPaint(
-                size: const Size(121, 11), // Adjust the size as per your image
-                painter: EllipsePainter(),
-              ),
-            ],
-          )
+          // Removed the shadow part
         ],
       ),
     );
-  }
-}
-
-class EllipsePainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = const Color.fromARGB(
-          104, 17, 17, 17) // Ellipse color (black in this case)
-      ..style = PaintingStyle.fill; // Fill the ellipse
-
-    // Define the rectangle boundary for the ellipse
-    Rect rect =
-        Rect.fromLTWH(0, size.height * 0.2, size.width, size.height * 0.6);
-
-    // Draw the ellipse
-    canvas.drawOval(rect, paint);
-  }
-
-  @override
-  bool shouldRepaint(CustomPainter oldDelegate) {
-    return false;
   }
 }

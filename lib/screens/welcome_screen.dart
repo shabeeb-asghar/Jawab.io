@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jawab_io/Widgets/Image_Container_Dynamic.dart';
+import 'package:jawab_io/Widgets/Image_Container.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -14,24 +14,15 @@ class WelcomeScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // Logo Section
-            const Column(
+            Column(
               children: [
-                Image_Container_Dynamic(
+                Image_Container(
                   Image_Path: "Assets/Images/logo.png",
-                  Y_Index_Shadow: 15,
-                  X_Index_Shadow: 25,
                   X_Index_Image: 65,
                   Y_Index_Image: 55,
                   Image_Height: 120,
                   Image_Width: 120,
-                  Container_Height: 220, // Reduce container height
-                  Container_Width: 220, // Reduce container width
                 ),
-
-                // Image.asset(
-                //   'Assets/Images/logo.png',
-                //   height: 120,
-                // ),
                 const SizedBox(height: 20),
                 const Text(
                   'Jawab.io',
@@ -51,10 +42,11 @@ class WelcomeScreen extends StatelessWidget {
               'Welcome on Jawab',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  fontFamily: "Poppins",
-                  fontSize: 40,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black),
+                fontFamily: 'Roboto',
+                fontSize: 30,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),
             ),
             const SizedBox(height: 40),
 
@@ -67,7 +59,7 @@ class WelcomeScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF2E0548), // Dark purple
+                      backgroundColor: const Color(0xFF2E0548),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
@@ -107,7 +99,7 @@ class WelcomeScreen extends StatelessWidget {
                       style: TextStyle(
                         fontFamily: 'Roboto',
                         fontSize: 18,
-                        color: Color(0xFF2E0548), // Dark purple
+                        color: Color(0xFF2E0548),
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -118,7 +110,7 @@ class WelcomeScreen extends StatelessWidget {
             const SizedBox(height: 30),
 
             const Column(
-              children: const [
+              children: [
                 Text(
                   'Or continue with',
                   style: TextStyle(
@@ -141,7 +133,7 @@ class WelcomeScreen extends StatelessWidget {
 
                     // Facebook Button
                     SocialButton(
-                      iconPath: 'Assets/Images/fb.png',
+                      iconPath: 'Assets/Images/facebook.png',
                     ),
                   ],
                 ),
