@@ -9,7 +9,8 @@ class Button extends StatelessWidget
  final double Button_Height;
   final double Button_Width;
   final Function onPressed;
-  const Button(this.Button_Text, this.Text_Size,this.Text_Color, this.Button_Color, this.Button_Height, this.Button_Width, this.onPressed, {super.key});
+  final FontWeight Text_Weight;
+  const Button(this.Button_Text, this.Text_Size,this.Text_Color,this.Text_Weight ,this.Button_Color, this.Button_Height, this.Button_Width, this.onPressed, {super.key});
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(style: ElevatedButton.styleFrom(
@@ -18,6 +19,8 @@ class Button extends StatelessWidget
     ),onPressed: () {
       onPressed();
     }, child: Text(Button_Text , style: TextStyle(
+      fontFamily: "Poppins",
+      fontWeight: Text_Weight,
       fontSize: Text_Size,
       color: Text_Color
     )));

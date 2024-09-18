@@ -10,12 +10,12 @@ class Dots extends StatelessWidget{
         if(index == Active)
         {
           return const Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(4.0),
             child:  Dot(true),
           );
         }
         return const Padding(
-          padding: EdgeInsets.all(8.0),
+          padding: EdgeInsets.all(4.0),
           child: Dot(false),
         );
       }),
@@ -29,8 +29,8 @@ class Dot extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 7,
-      width: 7,
+      height: 8,
+      width: 8,
       decoration: BoxDecoration(border: Border.all(color: Active ? const Color.fromARGB(255,35, 23, 73): const Color.fromARGB(255,221, 221, 221,),width: 1),borderRadius: const BorderRadius.all(Radius.circular(10))),
     );
   }
