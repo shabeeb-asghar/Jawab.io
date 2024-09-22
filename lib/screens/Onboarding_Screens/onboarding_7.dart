@@ -2,34 +2,37 @@ import 'package:flutter/material.dart';
 import 'package:jawab_io/Widgets/Button.dart';
 import 'package:jawab_io/Widgets/Dots.dart';
 import 'package:jawab_io/Widgets/Image_Container.dart';
+import 'package:jawab_io/Widgets/Utifility.dart';
+import 'package:jawab_io/screens/Onboarding_Screens/onboarding_8.dart';
 
-void Press_Skip_Button() {}
 
-void Press_Next_Button() {}
 
 class OnBoarding_7 extends StatelessWidget {
   const OnBoarding_7({super.key});
+  void Press_Next_Button(BuildContext context){
+  Navigator.push(context, MaterialPageRoute(builder: (context) => const OnBoarding_8()));
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
           child: Stack(children: [
-        const Column(
+        Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
               children: [
-                SizedBox(
+                const SizedBox(
                   width: 290,
                 ),
                 Button("Skip", 16, Colors.white, FontWeight.w300,
-                    Color.fromARGB(255, 36, 22, 73), 20, 80, Press_Skip_Button),
+                    const Color.fromARGB(255, 36, 22, 73), 20, 80, () => Press_Skip_Button(context)),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Image_Container(
+            const Image_Container(
               Image_Path: "Assets/Images/7_1.png",
               Y_Index_Shadow: 25,
               X_Index_Image: 78,
@@ -37,10 +40,10 @@ class OnBoarding_7 extends StatelessWidget {
               Image_Height: 180,
               Image_Width: 180,
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            SizedBox(
+            const SizedBox(
               width: 335,
               child: Text(
                 "Image Transcription",
@@ -52,10 +55,10 @@ class OnBoarding_7 extends StatelessWidget {
                     color: Colors.black),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            SizedBox(
+            const SizedBox(
                 width: 300,
                 child: Text(
                   "Effortlessly convert image text into editable format with the AI Assistant.",
@@ -66,13 +69,13 @@ class OnBoarding_7 extends StatelessWidget {
                       fontSize: 12,
                       fontWeight: FontWeight.w300),
                 )),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Button("Next", 16, Colors.white, FontWeight.w600,
-                Color.fromARGB(255, 36, 22, 73), 50, 335, Press_Next_Button),
-            SizedBox(height: 20),
-            Padding(
+                const Color.fromARGB(255, 36, 22, 73), 50, 335, () => Press_Next_Button(context)),
+            const SizedBox(height: 20),
+            const Padding(
               padding: EdgeInsets.only(left: 125),
               child: Dots(6),
             )
@@ -81,9 +84,9 @@ class OnBoarding_7 extends StatelessWidget {
         Positioned(
           top: 250,
           left: 155,
-          child: Image.asset("Assets/Images/7_2.png"),
           height: 280,
           width: 280,
+          child: Image.asset("Assets/Images/7_2.png"),
         ),
       ])),
     );

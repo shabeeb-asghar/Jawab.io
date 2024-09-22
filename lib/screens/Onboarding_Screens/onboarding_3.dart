@@ -2,33 +2,36 @@ import 'package:flutter/material.dart';
 import 'package:jawab_io/Widgets/Button.dart';
 import 'package:jawab_io/Widgets/Dots.dart';
 import 'package:jawab_io/Widgets/Image_Container.dart';
+import 'package:jawab_io/Widgets/Utifility.dart';
+import 'package:jawab_io/screens/Onboarding_Screens/onboarding_4.dart';
 
-void Press_Skip_Button() {}
 
-void Press_Next_Button() {}
 
 class OnBoarding_3 extends StatelessWidget {
   const OnBoarding_3({super.key});
+void Press_Next_Button(BuildContext context){
+  Navigator.push(context, MaterialPageRoute(builder: (context) => const OnBoarding_4()));
+}
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SafeArea(
           child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 290,
               ),
               Button("Skip", 16, Colors.white, FontWeight.w300,
-                  Color.fromARGB(255, 36, 22, 73), 20, 80, Press_Skip_Button),
+                  const Color.fromARGB(255, 36, 22, 73), 20, 80, () => Press_Skip_Button(context)),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Image_Container(
+          const Image_Container(
             Image_Path: "Assets/Images/3.png",
             Y_Index_Shadow: 25,
             X_Index_Image: 78,
@@ -36,10 +39,10 @@ class OnBoarding_3 extends StatelessWidget {
             Image_Height: 180,
             Image_Width: 180,
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          SizedBox(
+          const SizedBox(
             width: 335,
             child: Text(
               "Advanced Dictionary",
@@ -51,10 +54,10 @@ class OnBoarding_3 extends StatelessWidget {
                   color: Colors.black),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
-          SizedBox(
+          const SizedBox(
               width: 300,
               child: Text(
                 "Decrypts each word or term in a sentence for a detailed understanding of the Arabic language.",
@@ -65,13 +68,13 @@ class OnBoarding_3 extends StatelessWidget {
                     fontSize: 12,
                     fontWeight: FontWeight.w300),
               )),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Button("Next", 16, Colors.white, FontWeight.w600,
-              Color.fromARGB(255, 36, 22, 73), 50, 335, Press_Next_Button),
-          SizedBox(height: 20),
-          Padding(
+              const Color.fromARGB(255, 36, 22, 73), 50, 335,() =>  Press_Next_Button(context)),
+          const SizedBox(height: 20),
+          const Padding(
             padding: EdgeInsets.only(left: 125),
             child: Dots(2),
           )
