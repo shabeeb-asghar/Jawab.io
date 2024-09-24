@@ -42,25 +42,19 @@ class OnBoarding_6 extends StatelessWidget {
             X_Index_Shadow: 106,
           ),
           const SizedBox(
-            height: 30,
-          ),
-          const SizedBox(
             width: 335,
-            child: Text(
-              "AI Assistant that will allow you to make:",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontFamily: "Poppins",
-                  fontSize: 28,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black),
+            height: 200,
+            child: Center(
+              child: Text(
+                "AI Assistant that will allow you to make:",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontFamily: "Poppins",
+                    fontSize: 28,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.black),
+              ),
             ),
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          const SizedBox(
-            height: 30,
           ),
           Button("Next", 16, Colors.white, FontWeight.w600,
               const Color.fromARGB(255, 36, 22, 73), 50, 335,() => Press_Next_Button(context)),

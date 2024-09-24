@@ -28,14 +28,13 @@ class OnBoarding_1 extends StatelessWidget{
         const SizedBox(height: 20,),
         const Image_Container(Image_Path: "Assets/Images/1.png"),
         const SizedBox(height: 30,),
-        const SizedBox(width: 335,child: Text("Welcome on Jawab Let me show you what we can do for you !",textAlign: TextAlign.center,style: TextStyle(
+        const SizedBox(width: 335, height: 170,child: Text("Welcome on Jawab Let me show you what we can do for you !",textAlign: TextAlign.center,style: TextStyle(
           fontFamily: "Poppins",
           fontSize: 28,
           fontWeight: FontWeight.w700,
           color: Colors.black
           
         ),),),
-        const SizedBox(height: 30,),
         Button("Let's Go !", 16, Colors.white, FontWeight.w600, const Color.fromARGB(255,36,22,73), 50, 335, () => Press_LetsGo_Button(context)),
         const SizedBox(height: 20),
         const Padding(

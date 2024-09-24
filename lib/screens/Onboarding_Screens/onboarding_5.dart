@@ -42,22 +42,24 @@ class OnBoarding_5 extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-         const  SizedBox(
-            width: 335,
-            child: Text(
-              "Analyze PDF Files",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontFamily: "Poppins",
-                  fontSize: 28,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black),
-            ),
-          ),
-         const  SizedBox(
-            height: 30,
-          ),
-          const SizedBox(
+         const SizedBox(
+          height: 170,
+           child: Column(
+             children: [
+               SizedBox(
+                  width: 150,
+                  height: 100,
+                  child: Text(
+                    "Analyze PDF Files",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontFamily: "Poppins",
+                        fontSize: 28,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.black),
+                  ),
+                ),
+          SizedBox(
               width: 300,
               child: Text(
                 "Analyze your PDFs in-depth to quickly extract and understand key information.",
@@ -68,9 +70,9 @@ class OnBoarding_5 extends StatelessWidget {
                     fontSize: 12,
                     fontWeight: FontWeight.w300),
               )),
-          const SizedBox(
-            height: 30,
-          ),
+             ],
+           ),
+         ),
           Button("Next", 16, Colors.white, FontWeight.w600,
               const Color.fromARGB(255, 36, 22, 73), 50, 335, () => Press_Next_Button(context)),
           const SizedBox(height: 20),

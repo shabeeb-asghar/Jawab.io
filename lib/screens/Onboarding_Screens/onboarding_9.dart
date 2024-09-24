@@ -29,21 +29,26 @@ class OnBoarding_9 extends StatelessWidget{
           const SizedBox(height: 20,),
           const Image_Container(Image_Path: "Assets/Images/9.png",Y_Index_Shadow: 25, X_Index_Image: 78,Y_Index_Image: 65, Image_Height: 180, Image_Width: 180,),
           const SizedBox(height: 30,),
-          const SizedBox(width: 335,child: Text("Conjugate Verbs",textAlign: TextAlign.center,style: TextStyle(
-            fontFamily: "Poppins",
-            fontSize: 28,
-            fontWeight: FontWeight.w700,
-            color: Colors.black
-            
-          ),),),
-          const SizedBox(height: 30,),
-          const SizedBox(width:300,child: Text("Instantly conjugate Arabic verbs with ease, simplifying the mastery of different tenses.",textAlign: TextAlign.center,style: TextStyle(
+          const SizedBox(
+            height: 170,
+            child: Column(
+              children: [
+                SizedBox(width: 335,height: 100,child: Text("Conjugate Verbs",textAlign: TextAlign.center,style: TextStyle(
+                  fontFamily: "Poppins",
+                  fontSize: 28,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.black
+                  
+                ),),),
+          SizedBox(width:300,child: Text("Instantly conjugate Arabic verbs with ease, simplifying the mastery of different tenses.",textAlign: TextAlign.center,style: TextStyle(
             color: Color.fromARGB(255, 136, 136, 136),
             fontFamily: "Poppins",
             fontSize: 12,
             fontWeight: FontWeight.w300
           ),)),
-          const SizedBox(height: 30,),
+              ],
+            ),
+          ),
           Button("Next", 16, Colors.white, FontWeight.w600, const Color.fromARGB(255,36,22,73), 50, 335, () => Press_Next_Button(context)),
           const SizedBox(height: 20),
           const Padding(

@@ -43,33 +43,35 @@ void Press_Next_Button(BuildContext context){
             height: 30,
           ),
           const SizedBox(
-            width: 335,
-            child: Text(
-              "Advanced Dictionary",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontFamily: "Poppins",
-                  fontSize: 28,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.black),
+            height: 170,
+            child: Column(
+              children: [
+                SizedBox(
+                  width: 335,
+                  height: 100,
+                  child: Text(
+                    "Advanced Dictionary",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontFamily: "Poppins",
+                        fontSize: 28,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.black),
+                  ),
+                ),
+            SizedBox(
+                width: 300,
+                child: Text(
+                  "Decrypts each word or term in a sentence for a detailed understanding of the Arabic language.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 136, 136, 136),
+                      fontFamily: "Poppins",
+                      fontSize: 12,
+                      fontWeight: FontWeight.w300),
+                )),
+              ],
             ),
-          ),
-          const SizedBox(
-            height: 30,
-          ),
-          const SizedBox(
-              width: 300,
-              child: Text(
-                "Decrypts each word or term in a sentence for a detailed understanding of the Arabic language.",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    color: Color.fromARGB(255, 136, 136, 136),
-                    fontFamily: "Poppins",
-                    fontSize: 12,
-                    fontWeight: FontWeight.w300),
-              )),
-          const SizedBox(
-            height: 30,
           ),
           Button("Next", 16, Colors.white, FontWeight.w600,
               const Color.fromARGB(255, 36, 22, 73), 50, 335,() =>  Press_Next_Button(context)),

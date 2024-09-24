@@ -22,15 +22,16 @@ class OnBoarding_10 extends StatelessWidget{
         ),
         const SizedBox(height: 20,),
         const Image_Container(Image_Path: "Assets/Images/10.png",X_Index_Shadow: 108,Y_Index_Shadow: 5, X_Index_Image: 43,Y_Index_Image: 10, Image_Height: 280, Image_Width: 280,),
-        const SizedBox(height: 40,),
-        const SizedBox(width: 335,child: Text("And many more amazing features",textAlign: TextAlign.center,style: TextStyle(
-          fontFamily: "Poppins",
-          fontSize: 28,
-          fontWeight: FontWeight.w700,
-          color: Colors.black
-          
-        ),),),
-        const SizedBox(height: 50,),
+        const SizedBox(width: 335,height: 200,
+        child: Center(
+          child: Text("And many more amazing features",textAlign: TextAlign.center,style: TextStyle(
+            fontFamily: "Poppins",
+            fontSize: 28,
+            fontWeight: FontWeight.w700,
+            color: Colors.black
+            
+          ),),
+        ),),
         Button("Next", 16, Colors.white, FontWeight.w600, Color.fromARGB(255,36,22,73), 50, 335, () => Press_Skip_Button(context)),
         const SizedBox(height: 20),
         const Padding(
