@@ -11,7 +11,9 @@ class OnBoarding_1 extends StatelessWidget{
   const OnBoarding_1({super.key});
   void Press_LetsGo_Button(BuildContext context)
   {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const OnBoarding_2()));
+    Navigator.push(context, PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => const OnBoarding_2(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) => Slide_Animation(animation,child),
+    ));
   }
   @override
   Widget build(BuildContext context) {

@@ -3,11 +3,18 @@ import 'package:jawab_io/Widgets/Button.dart';
 import 'package:jawab_io/Widgets/Dots.dart';
 import 'package:jawab_io/Widgets/Image_Container.dart';
 import 'package:jawab_io/Widgets/Utifility.dart';
+import 'package:jawab_io/screens/Welcome_Screen/welcome_screen.dart';
 
 
 
 class OnBoarding_10 extends StatelessWidget{
   const OnBoarding_10({super.key});
+  void Press_Next_Button(BuildContext context)
+  {
+    Navigator.push(context, PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => const WelcomeScreen(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) => Slide_Animation(animation,child),
+    ));
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +39,7 @@ class OnBoarding_10 extends StatelessWidget{
             
           ),),
         ),),
-        Button("Next", 16, Colors.white, FontWeight.w600, Color.fromARGB(255,36,22,73), 50, 335, () => Press_Skip_Button(context)),
+        Button("Next", 16, Colors.white, FontWeight.w600, const Color.fromARGB(255,36,22,73), 50, 335, () => Press_Next_Button(context)),
         const SizedBox(height: 20),
         const Padding(
           padding: EdgeInsets.only(left: 125),

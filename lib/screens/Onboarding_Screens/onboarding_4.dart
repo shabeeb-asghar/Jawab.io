@@ -10,8 +10,9 @@ import 'package:jawab_io/screens/Onboarding_Screens/onboarding_5.dart';
 class OnBoarding_4 extends StatelessWidget {
   const OnBoarding_4({super.key});
   void Press_Next_Button(BuildContext context){
-  Navigator.push(context, MaterialPageRoute(builder: (context) => const OnBoarding_5()));
-}
+    Navigator.push(context, PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => const OnBoarding_5(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) => Slide_Animation(animation,child),
+    ));}
   @override
   Widget build(BuildContext context) {
     return Scaffold(

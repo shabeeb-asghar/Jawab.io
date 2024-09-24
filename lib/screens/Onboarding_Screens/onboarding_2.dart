@@ -10,8 +10,9 @@ class OnBoarding_2 extends StatelessWidget{
   const OnBoarding_2({super.key});
     void Press_Next_Button(BuildContext context)
   {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const OnBoarding_3()));
-  }
+    Navigator.push(context, PageRouteBuilder(pageBuilder: (context, animation, secondaryAnimation) => const OnBoarding_3(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) => Slide_Animation(animation,child),
+    ));  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
