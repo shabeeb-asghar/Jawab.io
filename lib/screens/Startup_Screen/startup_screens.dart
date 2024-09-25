@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jawab_io/Widgets/Utility.dart';
 import 'package:jawab_io/screens/Onboarding_Screens/onboarding_1.dart';
 
 class StartupScreen extends StatelessWidget {
@@ -9,7 +10,6 @@ class StartupScreen extends StatelessWidget {
     return Scaffold(
       body: GestureDetector(
         onTap: () {
-          print(2);
           Navigator.push(context, MaterialPageRoute(builder: (context) => const OnBoarding_1()));
         },
         child: Container(
@@ -18,7 +18,7 @@ class StartupScreen extends StatelessWidget {
               begin: Alignment.topLeft,
               colors: [
                 Color.fromARGB(255,91, 58, 85),
-                Color.fromARGB(255,34, 22, 72),
+                Blue_Color
               ],
             ),
           ),

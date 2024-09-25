@@ -24,3 +24,16 @@ const Slide_Animation(this.animation, this.child , {super.key});
     
   }
 }
+
+const Blue_Color = Color.fromARGB(255,36,22,73);
+
+
+   void Press_Facebook_Button()
+    {
+
+    }
+
+    void Press_Google_Button()
+    {
+      
+    }

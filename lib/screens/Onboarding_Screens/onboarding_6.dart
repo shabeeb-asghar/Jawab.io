@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:jawab_io/Widgets/Button.dart';
 import 'package:jawab_io/Widgets/Dots.dart';
 import 'package:jawab_io/Widgets/Image_Container.dart';
-import 'package:jawab_io/Widgets/Utifility.dart';
+import 'package:jawab_io/Widgets/Utility.dart';
 import 'package:jawab_io/screens/Onboarding_Screens/onboarding_7.dart';
 
 
@@ -27,7 +27,7 @@ class OnBoarding_6 extends StatelessWidget {
                 width: 290,
               ),
               Button("Skip", 16, Colors.white, FontWeight.w300,
-                  const Color.fromARGB(255, 36, 22, 73), 20, 80, () => Press_Skip_Button(context)),
+                  Blue_Color, 20, 80, () => Press_Skip_Button(context)),
             ],
           ),
           const SizedBox(
@@ -58,7 +58,7 @@ class OnBoarding_6 extends StatelessWidget {
             ),
           ),
           Button("Next", 16, Colors.white, FontWeight.w600,
-              const Color.fromARGB(255, 36, 22, 73), 50, 335,() => Press_Next_Button(context)),
+              Blue_Color, 50, 335,() => Press_Next_Button(context)),
           const SizedBox(height: 20),
           const Padding(
             padding: EdgeInsets.only(left: 125),

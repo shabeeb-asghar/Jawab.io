@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:jawab_io/Widgets/Social_Button.dart';
+import 'package:jawab_io/Widgets/Utility.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
+ 
     return Scaffold(
       backgroundColor: const Color(0xFFF7F7F7),
       body: Padding(
@@ -52,7 +56,7 @@ class WelcomeScreen extends StatelessWidget {
                   height: 50,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF2E0548),
+                      backgroundColor: Blue_Color,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(25),
                       ),
@@ -120,12 +124,14 @@ class WelcomeScreen extends StatelessWidget {
                   children: [
                     // Google Button
                     SocialButton(
+                      onPressed: Press_Google_Button,
                       iconPath: 'Assets/Images/icon.png',
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: 40),
 
                     // Facebook Button
                     SocialButton(
+                      onPressed: Press_Facebook_Button,
                       iconPath: 'Assets/Images/fb.png',
                     ),
                   ],
@@ -134,28 +140,6 @@ class WelcomeScreen extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class SocialButton extends StatelessWidget {
-  final String iconPath;
-
-  const SocialButton({Key? key, required this.iconPath}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        border: Border.all(color: const Color(0xFFE0E0E0)),
-        borderRadius: BorderRadius.circular(50),
-      ),
-      child: Image.asset(
-        iconPath,
-        height: 30,
-        width: 30,
       ),
     );
   }
